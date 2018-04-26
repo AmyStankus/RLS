@@ -80,16 +80,22 @@
         </a>
       </li>
     </ul>
+    <app-gallery></app-gallery>
   </div>
 </template>
 
 <script>
+import Gallery from '@/components/Gallery'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    appGallery: Gallery
   }
 }
 </script>
